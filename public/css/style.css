@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("../fonts/BYekan-webfont.eot") format("eot"),
+        url("../fonts/BYekan-webfont.woff") format("woff"),
+        url("../fonts/BYekan-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../img/last-of-us-desktop-wallpaper002.jpg');
+    background-size:cover;
+    direction: rtl;
+}
+.app{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.newTask{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    justify-content:center;
+}
+.newTask form{
+    width:70%;
+    height:60px;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.323);
+    display: flex;
+    justify-content:center;
+}
+.newTask form .input-group{
+    width:90%;
+}
+.newTask form .input-group input{
+    width:100%;
+    height:40px;
+}
+.newTask form .input-group-append button{
+    font-size:18px;
+    height:38px;
+    outline:0;
+    border:0;
+}
+.todos{
+    position: absolute;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.44);
+    width:70%;
+    min-height:30px;
+    border-radius: 5px;
+}
+.todo-child{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-child::after{
+    content:"";
+    width:3px;
+    height:30px;
+    background-color:red;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.btn-parent{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.button-btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
