@@ -6,7 +6,7 @@ const Todo = ({ text, isCompleted,deleted,completed}) => {
     const context = useContext(TodoContext);
 
     return (
-        <div className="todo-child pr-2">
+        <div className={`todo-child pr-2 ${isCompleted ? "after" : "" }`}>
             <p>{isCompleted ? <del>{text}</del> : text}</p>
             <div className="btn-parent pl-2">
                 <button className="btn btn-danger button-btn" onClick={deleted}><i className="tf-ion-ios-trash"></i></button>

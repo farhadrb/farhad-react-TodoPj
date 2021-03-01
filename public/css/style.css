@@ -9,7 +9,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url('../img/last-of-us-desktop-wallpaper002.jpg');
+    background: url('../img/the-last-of-us-part-2-image-2.jpg');
     background-size:cover;
     direction: rtl;
 }
@@ -58,6 +58,9 @@ body{
     position:relative;
     display: flex;
     justify-content: space-between;
+}
+.todo-child.after::after{
+    background-color:green;
 }
 .todo-child::after{
     content:"";
